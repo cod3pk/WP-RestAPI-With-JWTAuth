@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Fired during plugin deactivation
+ * Fired during plugin activation
  *
  * @link       https://github.com/cod3pk
  * @since      1.0.0
@@ -11,16 +11,16 @@
  */
 
 /**
- * Fired during plugin deactivation.
+ * Fired during plugin activation.
  *
- * This class defines all code necessary to run during the plugin's deactivation.
+ * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
  * @package    Wp_Restapi_Auth
  * @subpackage Wp_Restapi_Auth/includes
  * @author     cod3pk <asfandkhan404@gmail.com>
  */
-class Wp_Restapi_Auth_Deactivator {
+class WP_Rest_Auth_Activator {
 
 	/**
 	 * Short Description. (use period)
@@ -29,7 +29,7 @@ class Wp_Restapi_Auth_Deactivator {
 	 *
 	 * @since    1.0.0
 	 */
-	public static function deactivate() {
+	public static function activate() {
 
 	}
 
