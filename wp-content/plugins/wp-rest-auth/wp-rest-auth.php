@@ -22,7 +22,6 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wp-rest-auth
- * Domain Path:       /languages
  */
 
 // If this file is called directly, abort.
@@ -32,18 +31,11 @@ if ( ! defined( 'WPINC' ) ) {
 
 define( 'WP_REST_AUTH_VERSION', '1.0.0' );
 
-function activate_wp_rest_auth(): void {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp-rest-auth-activator.php';
-	WP_Rest_Auth_Activator::activate();
-}
 
-register_activation_hook( __FILE__, 'activate_wp_rest_auth' );
 require plugin_dir_path( __FILE__ ) . 'includes/class-wp-rest-auth.php';
 
 function run_wp_rest_auth() {
 	$plugin = new WP_Rest_Auth();
-//	$plugin->run();
-
 }
 
 run_wp_rest_auth();
